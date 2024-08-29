@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+<link rel="stylesheet" href="s3.css"/>
+<style>
+*{
+    margin:0;
+    padding: 0;
+    
+    font-family: source sans pro,sans-serif;
+  }
+ body{
+   width:auto;
+   height:auto;
+   background: rgb(249,239,243);
+   margin:auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:center;
+ }
+ .container{
+   width: 500px;
+   height: 700px;
+   background: #fff;
+   border-radius: 15px;
+   box-shadow: 4px 4px 30px rgba(0,0,0,0.06);
+   padding: 20px;
+   overflow-y:scroll;
+  
+ }
+  .search-icon img{
+  height:15px;
+  width:15px;
+ }
+ .container form{
+   width: 100%;
+   height:60px;
+   border: 1px solid rgb(82,74,235);
+   border-radius: 4px;
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+
+ }
+.container form input {
+   border: none;
+   outline:none;
+   box-shadow:none;
+   width:100%;
+   font-size: 24px;
+   font-weight: 600;
+   padding: 8px 10px;
+ }
+ .container form img{
+   height: 70px;
+   width:70px;
+   padding-left:10px;
+ }
+ .product-list{
+   padding:20px 0;
+ }
+ .product {
+   display:flex;
+   align-items: center;
+   cursor:pointer;
+   padding-bottom: 15px;
+ }
+ .product img{
+   width: 150px;
+   height:150px;
+   background-size: cover;
+   border-radius: 5px;
+ }
+ .product .p-details{
+   padding-left:15px;
+ }
+ .product .p-details h2{
+   font-size: 20px;
+   color:#1d1d1d;
+ }
+ .product .p-details h3{
+   font-size:18px;
+ }
+</style>
+</head>
+
+<body>
+<section class="container">
+<form>
+ <div class="search-icon"> <img src="C:\Users\DELL\Downloads\s-icon.jpg" alt=""></div>
+  <input type="text" name=""id="item" placeholder="search products" onkeyup="search_product()">
+</form>
+<div class="product-list">
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding8.jpg" alt="">
+    <div class="p-details">
+      <h2>headphones</h2>
+      <h3>under 199</h3>
+    </div>
+  </div>
+    <div class="product">
+    <img src="C:\Users\DELL\Downloads\img5.jpg" alt="">
+    <div class="p-details">
+      <h2>Branded makeup products</h2>
+      <h3>under 199</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding3.jpg" alt="">
+    <div class="p-details">
+      <h2>Basmati rice</h2>
+      <h3>under 199</h3>
+    </div>
+  </div>
+  
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding2.jpg" alt="">
+    <div class="p-details">
+      <h2>wirelesa headphones r</h2></h2>
+      <h3>under 199</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding1.jpg" alt="">
+    <div class="p-details">
+      <h2>window air conditioner</h2></h2>
+      <h3>under 10999</h3>
+    </div>
+  </div>
+    <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding5.jpg" alt="">
+    <div class="p-details">
+      <h2>lehenga for women</h2>
+      <h3>umder 599</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\img14.jpg" alt="">
+    <div class="p-details">
+      <h2>trolly bags </h2>
+      <h3>under 599</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\img13.jpg" alt="">
+    <div class="p-details">
+      <h2>Himalaya face wash</h2>
+      <h3>under 199</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\img11.jpg" alt="">
+    <div class="p-details">
+      <h2>grocery</h2>
+      <h3> under 99</h3>
+    </div>
+  </div>
+    <div class="product">
+    <img src="C:\Users\DELL\Downloads\img10.jpg" alt="">
+    <div class="p-details">
+      <h2>branded bags</h2>
+      <h3>199</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\img5.jpg" alt="">
+    <div class="p-details">
+      <h2>Tshirt for everyone</h2>
+      <h3> under 199</h3>
+    </div>
+  </div>
+  
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\img4.jpg" alt="">
+    <div class="p-details">
+      <h2>headphones</h2>
+      <h3>199</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\headphone.jpg" alt="">
+    <div class="p-details">
+      <h2>bags and watches</h2>
+      <h3>199</h3>
+    </div>
+  </div>
+    <div class="product">
+    <img src="C:\Users\DELL\Downloads\head.jpg" alt="">
+    <div class="p-details">
+      <h2>Tshirt for everyone</h2>
+      <h3>199</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\slider5 .jpg" alt="">
+    <div class="p-details">
+      <h2>medicine</h2>
+      <h3>199</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\slider2.jpg" alt="">
+    <div class="p-details">
+      <h2>wireless headphones</h2>
+      <h3>199</h3>
+    </div>
+  </div>
+    <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding4.jpg" alt="">
+    <div class="p-details">
+      <h2>makeup and beauty products</h2>
+      <h3>199</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding5.jpg" alt="">
+    <div class="p-details">
+      <h2>basmati rice</h2>
+      <h3>199</h3>
+    </div>
+  </div>
+  
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding7.jpg" alt="">
+    <div class="p-details">
+      <h2>headphones</h2>
+      <h3>199</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding6.jpg" alt="">
+    <div class="p-details">
+      <h2>air conditioner</h2>
+      <h3>10999</h3>
+    </div>
+  </div>
+    <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding9.jpg" alt="">
+    <div class="p-details">
+      <h2>lehenga for women</h2>
+      <h3>599</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding10.jpg" alt="">
+    <div class="p-details">
+      <h2>trolly bags</h2>
+      <h3>199</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding11.jpg" alt="">
+    <div class="p-details">
+      <h2>face wash</h2>
+      <h3>199</h3>
+    </div>
+  </div>
+  <div class="product">
+    <img src="C:\Users\DELL\Downloads\sliding12.jpg" alt="">
+    <div class="p-details">
+      <h2>grocery</h2>
+      <h3>199</h3>
+    </div>
+  </div>
+  
+</div>
+</section>
+<script src="app2.js">
+
+</script>
+</body>
+</html>
